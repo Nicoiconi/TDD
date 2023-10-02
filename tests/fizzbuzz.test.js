@@ -1,21 +1,11 @@
 import { describe, expect, it } from 'vitest'
-
-export const fizzbuzz = (number) => {
-  if (typeof number !== 'number') throw new Error('Parameter provided should be a number')
-
-  if (Number.isNaN(number)) throw new Error('Parameter provided must be a number')
-
-  if (number % 15 === 0) return 'fizzbuzz'
-  if (number % 3 === 0) return 'fizz'
-  if (number % 5 === 0) return 'buzz'
-
-  return number
-}
+import { fizzbuzz } from '../src/fizzbuzz'
 
 describe('fizzbuzz', () => {
-  it('should be a function', () => {
-    expect(typeof fizzbuzz).toBe('function')
-  })
+  // // redundante 2
+  // it('should be a function', () => {
+  //   expect(typeof fizzbuzz).toBe('function')
+  // })
 
   it('should throw if not number is provided as parameter', () => {
     expect(() => fizzbuzz()).toThrow()
@@ -46,6 +36,11 @@ describe('fizzbuzz', () => {
     expect(fizzbuzz(9)).toBe('fizz')
     expect(fizzbuzz(12)).toBe('fizz')
   })
+
+  // // redundante 1: si pasa directamente en verde controlar si tiene sentido. los tests anteriores ya cubren este caso. seria un test redundante
+  // it('should return 4 if number provided is 4', () => {
+  //   expect(fizzbuzz(4)).toBe(4)
+  // })
 
   it('should return "fizz if number provided is 5', () => {
     expect(fizzbuzz(5)).toBe('buzz')
