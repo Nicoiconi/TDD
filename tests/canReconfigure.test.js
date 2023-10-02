@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import { canReconfigure } from '../src/canReconfigure'
 
+// configuración de strings
+// dados 2 strings intercambiar las letas entre si
+// limitaciones
+// al reemplazar el caracter se debe mantener el orden
+// no se puede asignar el mismo caracter a 2 letras distintas
+// deben tener la misma cantidad de letras unicas
+// la longitud de los strings tiene que ser la misma
+
 describe('canReconfigure', () => {
   // it('should be a function', () => {
   //   expect(canReconfigure).toBeTypeOf('function')
