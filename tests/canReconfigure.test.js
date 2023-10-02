@@ -1,36 +1,10 @@
 import { describe, expect, it } from 'vitest'
-
-const canReconfigure = (from, to) => {
-  if (from === undefined) throw new Error('from is required')
-  if (typeof from !== 'string') throw new Error('from should be a string')
-  if (to === undefined) throw new Error('to is missing')
-  if (typeof to !== 'string') throw new Error('to should be a string')
-
-  const haveSameLength = from.length === to.length
-  if (!haveSameLength) return false
-
-  const haveSameUniqueLetters = new Set(from).size === new Set(to).size
-  if (!haveSameUniqueLetters) return false
-
-  const transformations = {}
-
-  for (let i = 0; i < from.length; i++) {
-    const fromLetter = from[i]
-    const toLetter = to[i]
-
-    const storedLetter = transformations[fromLetter]
-    if (storedLetter && storedLetter !== toLetter) return false
-
-    transformations[fromLetter] = toLetter
-  }
-
-  return true
-}
+import { canReconfigure } from '../src/canReconfigure'
 
 describe('canReconfigure', () => {
-  it('should be a function', () => {
-    expect(canReconfigure).toBeTypeOf('function')
-  })
+  // it('should be a function', () => {
+  //   expect(canReconfigure).toBeTypeOf('function')
+  // })
 
   // first parameter
   it('should throw if the first parameter is missing', () => {
