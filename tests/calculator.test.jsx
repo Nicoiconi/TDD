@@ -91,4 +91,17 @@ describe('Calculator', () => {
     const input = screen.getByRole('textbox')
     expect(input.value).toBe('2')
   })
+
+  it('should clear the input when click C button', () => {
+    render(<Calculator />)
+
+    const one = screen.getByText('1')
+    fireEvent.click(one)
+
+    const clearButton = screen.getByRole('clear-button')
+    fireEvent.click(clearButton)
+
+    const input = screen.getByRole('textbox')
+    expect(input.value).toBe('')
+  })
 })

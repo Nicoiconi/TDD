@@ -29,6 +29,12 @@ export const Calculator = () => {
         value={value}
         readOnly
       />
+      <button
+        role='clear-button'
+        onClick={() => setValue('')}
+      >
+        C
+      </button>
       <div role='grid'>
         {
           rows.map((row, rowIndex) => (
