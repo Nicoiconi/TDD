@@ -16,25 +16,43 @@ export const equalSign = '='
 
 export const Calculator = () => {
   const [value, setValue] = useState('')
+  const [result, setResult] = useState('')
 
   const handleClick = (operation) => {
     setValue(value.concat(operation))
   }
 
+  const handleClearClick = () => {
+    setValue('')
+    setResult('')
+  }
+
   return (
     <section>
       <h1>Calculator</h1>
-      <input
-        type='text'
-        value={value}
-        readOnly
-      />
-      <button
-        role='clear-button'
-        onClick={() => setValue('')}
-      >
-        C
-      </button>
+      <div>
+        <input
+          role='equation-input'
+          type='text'
+          value={value}
+          readOnly
+        />
+      </div>
+      <div>
+        <input
+          role='result-input'
+          type='text'
+          value={result}
+        />
+      </div>
+      <div>
+        <button
+          role='clear-button'
+          onClick={() => handleClearClick()}
+        >
+          C
+        </button>
+      </div>
       <div role='grid'>
         {
           rows.map((row, rowIndex) => (
@@ -64,7 +82,7 @@ export const Calculator = () => {
         }
       </div>
       <button
-        onClick={() => setValue(evaluate(value))}
+        onClick={() => setResult(evaluate(value))}
       >
         {equalSign}
       </button>

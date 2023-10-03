@@ -41,7 +41,7 @@ describe('Calculator', () => {
 
   it('should render an input', () => {
     render(<Calculator />)
-    screen.getByRole('textbox')
+    screen.getByRole('equation-input')
   })
 
   it('should show user input after clicking several numbers', () => {
@@ -56,7 +56,7 @@ describe('Calculator', () => {
     const three = screen.getByText('3')
     fireEvent.click(three)
 
-    const input = screen.getByRole('textbox')
+    const input = screen.getByRole('equation-input')
     expect(input.value).toBe('123')
   })
 
@@ -70,7 +70,7 @@ describe('Calculator', () => {
     fireEvent.click(plus)
     fireEvent.click(one)
 
-    const input = screen.getByRole('textbox')
+    const input = screen.getByRole('equation-input')
     expect(input.value).toBe('1+1')
   })
 
@@ -88,8 +88,10 @@ describe('Calculator', () => {
     const equal = screen.getByText('=')
     fireEvent.click(equal)
 
-    const input = screen.getByRole('textbox')
-    expect(input.value).toBe('2')
+    // const input = screen.getByRole('equation-input')
+    // expect(input.value).toBe('2')
+    const inputResult = screen.getByRole('result-input')
+    expect(inputResult.value).toBe('2')
   })
 
   it('should clear the input when click C button', () => {
@@ -101,7 +103,52 @@ describe('Calculator', () => {
     const clearButton = screen.getByRole('clear-button')
     fireEvent.click(clearButton)
 
-    const input = screen.getByRole('textbox')
+    const input = screen.getByRole('equation-input')
     expect(input.value).toBe('')
+  })
+
+  it('should show input result', () => {
+    render(<Calculator />)
+
+    const one = screen.getByText('1')
+    fireEvent.click(one)
+
+    const plus = screen.getByText('+')
+    fireEvent.click(plus)
+
+    fireEvent.click(one)
+
+    const equal = screen.getByText('=')
+    fireEvent.click(equal)
+
+    const inputResult = screen.getByRole('result-input')
+    expect(inputResult.value).toBe('2')
+  })
+
+  it('shoueld clear result input when click C button', () => {
+    render(<Calculator />)
+
+    const one = screen.getByText('1')
+    fireEvent.click(one)
+
+    const plus = screen.getByText('+')
+    fireEvent.click(plus)
+
+    fireEvent.click(one)
+
+    const equal = screen.getByText('=')
+    fireEvent.click(equal)
+
+    const input = screen.getByRole('equation-input')
+    expect(input.value).toBe('1+1')
+
+    const inputResult = screen.getByRole('result-input')
+    expect(inputResult.value).toBe('2')
+
+    const clearButton = screen.getByRole('clear-button')
+    fireEvent.click(clearButton)
+
+    expect(input.value).toBe('')
+    expect(inputResult.value).toBe('')
   })
 })
