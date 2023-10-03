@@ -6,6 +6,8 @@ npm test
 npm run dev
 <!-- para levantar ver la calculadora en el navegador -->
 
+npm run coverage
+<!-- % de cobertura de tests según líneas de código -->
 
 FizzBuzz
 

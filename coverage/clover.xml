@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1696347579829" clover="3.2.0">
+  <project timestamp="1696347579829" name="All files">
+    <metrics statements="141" coveredstatements="141" conditionals="37" coveredconditionals="37" methods="9" coveredmethods="9" elements="187" coveredelements="187" complexity="0" loc="141" ncloc="141" packages="1" files="3" classes="3"/>
+    <file name="Calculator.jsx" path="C:\Users\Nicolas\Desktop\Escritorio\trabajos\Repositorios Git\TDD\src\Calculator.jsx">
+      <metrics statements="91" coveredstatements="91" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="18" count="35" type="stmt"/>
+      <line num="19" count="35" type="stmt"/>
+      <line num="20" count="35" type="stmt"/>
+      <line num="21" count="35" type="cond" truecount="1" falsecount="0"/>
+      <line num="22" count="16" type="stmt"/>
+      <line num="23" count="16" type="stmt"/>
+      <line num="24" count="35" type="stmt"/>
+      <line num="25" count="35" type="cond" truecount="1" falsecount="0"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="27" count="2" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="29" count="35" type="stmt"/>
+      <line num="30" count="35" type="stmt"/>
+      <line num="31" count="35" type="stmt"/>
+      <line num="32" count="35" type="stmt"/>
+      <line num="33" count="35" type="stmt"/>
+      <line num="34" count="35" type="stmt"/>
+      <line num="35" count="35" type="stmt"/>
+      <line num="36" count="35" type="stmt"/>
+      <line num="37" count="35" type="stmt"/>
+      <line num="38" count="35" type="stmt"/>
+      <line num="39" count="35" type="stmt"/>
+      <line num="40" count="35" type="stmt"/>
+      <line num="41" count="35" type="stmt"/>
+      <line num="42" count="35" type="stmt"/>
+      <line num="43" count="35" type="stmt"/>
+      <line num="44" count="35" type="stmt"/>
+      <line num="45" count="35" type="stmt"/>
+      <line num="46" count="35" type="stmt"/>
+      <line num="47" count="35" type="stmt"/>
+      <line num="48" count="35" type="stmt"/>
+      <line num="49" count="35" type="stmt"/>
+      <line num="50" count="35" type="stmt"/>
+      <line num="51" count="35" type="cond" truecount="1" falsecount="0"/>
+      <line num="52" count="35" type="stmt"/>
+      <line num="53" count="35" type="stmt"/>
+      <line num="54" count="35" type="stmt"/>
+      <line num="55" count="35" type="stmt"/>
+      <line num="56" count="35" type="stmt"/>
+      <line num="57" count="35" type="stmt"/>
+      <line num="58" count="35" type="cond" truecount="1" falsecount="0"/>
+      <line num="59" count="136" type="stmt"/>
+      <line num="60" count="136" type="stmt"/>
+      <line num="61" count="136" type="cond" truecount="1" falsecount="0"/>
+      <line num="62" count="340" type="stmt"/>
+      <line num="63" count="340" type="cond" truecount="1" falsecount="0"/>
+      <line num="64" count="340" type="stmt"/>
+      <line num="65" count="340" type="stmt"/>
+      <line num="66" count="340" type="stmt"/>
+      <line num="67" count="340" type="stmt"/>
+      <line num="68" count="136" type="stmt"/>
+      <line num="69" count="136" type="stmt"/>
+      <line num="70" count="136" type="stmt"/>
+      <line num="71" count="35" type="stmt"/>
+      <line num="72" count="35" type="stmt"/>
+      <line num="73" count="35" type="stmt"/>
+      <line num="74" count="35" type="cond" truecount="1" falsecount="0"/>
+      <line num="75" count="136" type="stmt"/>
+      <line num="76" count="136" type="cond" truecount="1" falsecount="0"/>
+      <line num="77" count="136" type="stmt"/>
+      <line num="78" count="136" type="stmt"/>
+      <line num="79" count="136" type="stmt"/>
+      <line num="80" count="136" type="stmt"/>
+      <line num="81" count="35" type="stmt"/>
+      <line num="82" count="35" type="stmt"/>
+      <line num="83" count="35" type="stmt"/>
+      <line num="84" count="35" type="stmt"/>
+      <line num="85" count="35" type="cond" truecount="1" falsecount="0"/>
+      <line num="86" count="35" type="stmt"/>
+      <line num="87" count="35" type="stmt"/>
+      <line num="88" count="35" type="stmt"/>
+      <line num="89" count="35" type="stmt"/>
+      <line num="90" count="35" type="stmt"/>
+      <line num="91" count="35" type="stmt"/>
+    </file>
+    <file name="canReconfigure.js" path="C:\Users\Nicolas\Desktop\Escritorio\trabajos\Repositorios Git\TDD\src\canReconfigure.js">
+      <metrics statements="26" coveredstatements="26" conditionals="18" coveredconditionals="18" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="3" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="8" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="17" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="19" count="5" type="stmt"/>
+      <line num="20" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="22" count="4" type="stmt"/>
+      <line num="23" count="4" type="stmt"/>
+      <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+    </file>
+    <file name="fizzbuzz.js" path="C:\Users\Nicolas\Desktop\Escritorio\trabajos\Repositorios Git\TDD\src\fizzbuzz.js">
+      <metrics statements="24" coveredstatements="24" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="13" type="cond" truecount="1" falsecount="0"/>
+      <line num="3" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="10" type="cond" truecount="1" falsecount="0"/>
+      <line num="5" count="10" type="stmt"/>
+      <line num="6" count="10" type="stmt"/>
+      <line num="7" count="10" type="stmt"/>
+      <line num="8" count="10" type="stmt"/>
+      <line num="9" count="10" type="stmt"/>
+      <line num="10" count="10" type="stmt"/>
+      <line num="11" count="10" type="stmt"/>
+      <line num="12" count="10" type="stmt"/>
+      <line num="13" count="10" type="stmt"/>
+      <line num="14" count="10" type="cond" truecount="1" falsecount="0"/>
+      <line num="15" count="20" type="cond" truecount="1" falsecount="0"/>
+      <line num="16" count="10" type="stmt"/>
+      <line num="17" count="10" type="stmt"/>
+      <line num="18" count="10" type="stmt"/>
+      <line num="19" count="10" type="stmt"/>
+      <line num="20" count="10" type="stmt"/>
+      <line num="21" count="10" type="stmt"/>
+      <line num="22" count="10" type="stmt"/>
+      <line num="23" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="13" type="stmt"/>
+    </file>
+  </project>
+</coverage>
