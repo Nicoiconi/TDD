@@ -1,4 +1,4 @@
-Proyectos con TDD con vitest
+Test Driven Development con vitest
 
 npm test 
 <!-- para correr los tests -->
